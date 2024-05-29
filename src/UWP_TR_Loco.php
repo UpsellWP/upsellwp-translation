@@ -1,6 +1,10 @@
 <?php
 defined('ABSPATH') || exit;
 
+if (class_exists('UWP_TR_Loco')) {
+    return;
+}
+
 class UWP_TR_Loco
 {
     /**

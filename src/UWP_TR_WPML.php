@@ -2,6 +2,10 @@
 
 defined('ABSPATH') || exit;
 
+if (class_exists('UWP_TR_WPML')) {
+    return;
+}
+
 class UWP_TR_WPML
 {
     /**

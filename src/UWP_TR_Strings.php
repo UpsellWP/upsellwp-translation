@@ -1,6 +1,10 @@
 <?php
 defined('ABSPATH') || exit;
 
+if (class_exists('UWP_TR_Strings')) {
+    return;
+}
+
 class UWP_TR_Strings
 {
     /**
