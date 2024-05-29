@@ -30,7 +30,7 @@ add_action('plugins_loaded', function () {
         'woocommerce' => '4.4',
         'upsellwp' => '2.1',
     ];
-    $plugin_name = 'UpsellWP: Custom Taxonomy';
+    $plugin_name = 'UpsellWP: Translation';
 
     if (class_exists('\CUW\App\Core') && method_exists('\CUW\App\Helpers\Plugin', 'getDependenciesError')) {
         $error_message = \CUW\App\Helpers\Plugin::getDependenciesError($dependencies, $plugin_name);
