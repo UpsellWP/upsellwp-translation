@@ -19,6 +19,7 @@ jQuery(function ($) {
                     success: function (response) {
                         if (response.success) {
                             cuw_page.notify(response.data.message);
+                            $('#uwp-tr-wpml').attr('disabled', true);
                         } else {
                             cuw_page.notify(response.data.message, 'error');
                         }
