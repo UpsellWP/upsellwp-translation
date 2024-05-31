@@ -74,6 +74,7 @@ class UWP_TR_WPML
                 'nonce' => wp_create_nonce('uwp_tr_nonce'),
                 'i18n' => [
                   'synced' => __('Synced', 'upsellwp-translation'),
+                  'syncing' => __('Syncing...', 'upsellwp-translation'),
                 ],
             ]);
         }

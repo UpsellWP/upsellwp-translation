@@ -10,6 +10,10 @@ jQuery(function ($) {
 
         event_listeners: function () {
             $('#uwp-tr-wpml').on('click', function () {
+
+                $('#uwp-tr-wpml').prop('disabled', true);
+                $('#uwp-tr-wpml').text(uwp_tr_i18n.syncing);
+
                 $.ajax({
                     url: uwp_tr_ajx_url,
                     type: 'post',
@@ -21,7 +25,6 @@ jQuery(function ($) {
                         if (response.success) {
                             cuw_page.notify(response.data.message);
                             $('#uwp-tr-wpml').text(uwp_tr_i18n.synced);
-                            $('#uwp-tr-wpml').attr('disabled', true);
                         } else {
                             cuw_page.notify(response.data.message, 'error');
                         }
