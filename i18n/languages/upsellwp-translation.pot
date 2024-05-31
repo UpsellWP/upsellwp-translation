@@ -1,0 +1,56 @@
+# Copyright (C) 2024 UpsellWP
+# This file is distributed under the GPL v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: UpsellWP: Dynamic String Translation 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/upsellwp-translation\n"
+"Last-Translator: Flycart <support@flycart.org>\n"
+"Language-Team: Flycart <support@flycart.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-05-31T07:55:06+00:00\n"
+"PO-Revision-Date:  \n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: upsellwp-translation\n"
+
+#. Plugin Name of the plugin
+#: upsellwp-translation.php
+msgid "UpsellWP: Dynamic String Translation"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: upsellwp-translation.php
+msgid "https://upsellwp.com/add-ons/translation"
+msgstr ""
+
+#. Description of the plugin
+#: upsellwp-translation.php
+msgid "Dynamic string translation addon. Helpful to sync dynamic strings. Supported plugins: WPML and Loco Translate."
+msgstr ""
+
+#. Author of the plugin
+#: upsellwp-translation.php
+msgid "UpsellWP"
+msgstr ""
+
+#. Author URI of the plugin
+#: upsellwp-translation.php
+msgid "https://upsellwp.com"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:18
+msgid "WPML translation action not found"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:24
+msgid "Security check failed"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:36
+msgid "Synced successfully"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:47
+msgid "Sync"
+msgstr ""

@@ -44,7 +44,7 @@ class UWP_TR_WPML
      */
     public static function addWPMLSyncButton()
     {
-        echo '<button type="button" id="uwp-tr-wpml" class="btn btn-primary">' . esc_html__('sync', 'upsellwp-translate') . '</button>';
+        echo '<button type="button" id="uwp-tr-wpml" class="btn btn-primary">' . esc_html__('Sync', 'upsellwp-translation') . '</button>';
     }
 
     /**
