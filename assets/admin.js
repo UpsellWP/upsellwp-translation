@@ -20,7 +20,7 @@ jQuery(function ($) {
                     success: function (response) {
                         if (response.success) {
                             cuw_page.notify(response.data.message);
-                            $('#uwp-tr-wpml').text(uwp_tr_i18n.Synced);
+                            $('#uwp-tr-wpml').text(uwp_tr_i18n.synced);
                             $('#uwp-tr-wpml').attr('disabled', true);
                         } else {
                             cuw_page.notify(response.data.message, 'error');

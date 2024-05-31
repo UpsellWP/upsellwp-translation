@@ -73,7 +73,7 @@ class UWP_TR_WPML
                 'ajax_url' => admin_url('admin-ajax.php'),
                 'nonce' => wp_create_nonce('uwp_tr_nonce'),
                 'i18n' => [
-                  'Synced' => __('Synced', 'upsellwp-translation'),
+                  'synced' => __('Synced', 'upsellwp-translation'),
                 ],
             ]);
         }
