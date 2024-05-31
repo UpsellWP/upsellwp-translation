@@ -1,4 +1,13 @@
 <?php
+/**
+ * UpsellWP: Translation
+ *
+ * @package   upsellwp-translation
+ * @author    Team UpsellWP <team@upsellwp.com>
+ * @license   GPL-3.0-or-later
+ * @link      https://upsellwp.com
+ */
+
 defined('ABSPATH') || exit;
 
 if (class_exists('UWP_TR_Strings')) {
