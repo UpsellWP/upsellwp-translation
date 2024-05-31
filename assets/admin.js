@@ -1,6 +1,7 @@
 jQuery(function ($) {
     let uwp_tr_ajx_url = uwp_tr_admin_script_data.ajax_url;
     let uwp_tr_nonce = uwp_tr_admin_script_data.nonce;
+    let uwp_tr_i18n = uwp_tr_admin_script_data.i18n;
 
     const uwp_tr_admin_view = {
         init: function () {
@@ -19,6 +20,7 @@ jQuery(function ($) {
                     success: function (response) {
                         if (response.success) {
                             cuw_page.notify(response.data.message);
+                            $('#uwp-tr-wpml').text(uwp_tr_i18n.Synced);
                             $('#uwp-tr-wpml').attr('disabled', true);
                         } else {
                             cuw_page.notify(response.data.message, 'error');

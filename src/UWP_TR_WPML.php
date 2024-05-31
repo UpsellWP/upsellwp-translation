@@ -72,6 +72,9 @@ class UWP_TR_WPML
             wp_localize_script('uwp_tr_admin_script', 'uwp_tr_admin_script_data', [
                 'ajax_url' => admin_url('admin-ajax.php'),
                 'nonce' => wp_create_nonce('uwp_tr_nonce'),
+                'i18n' => [
+                  'Synced' => __('Synced', 'upsellwp-translation'),
+                ],
             ]);
         }
     }
