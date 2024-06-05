@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-05-31T08:01:41+00:00\n"
+"POT-Creation-Date: 2024-06-05T08:00:00+00:00\n"
 "PO-Revision-Date:  \n"
 "X-Generator: WP-CLI 2.10.0\n"
 "X-Domain: upsellwp-translation\n"
@@ -53,4 +53,12 @@ msgstr ""
 
 #: src/UWP_TR_WPML.php:55
 msgid "Sync"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:76
+msgid "Synced"
+msgstr ""
+
+#: src/UWP_TR_WPML.php:77
+msgid "Syncing..."
 msgstr ""
