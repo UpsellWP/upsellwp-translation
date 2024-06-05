@@ -30,8 +30,8 @@ add_action('plugins_loaded', function () {
         'upsellwp' => '2.1',
     ];
     $addon_name = 'UpsellWP: Dynamic String Translation';
-    include UWP_TR_PLUGIN_PATH . 'src/UWP_AO_Helper.php';
-    if (class_exists('UWP_AO_Helper') && UWP_AO_Helper::checkDependencies($requires, $addon_name)) {
+    include UWP_TR_PLUGIN_PATH . 'src/UWP_TR_Helper.php';
+    if (class_exists('UWP_TR_Helper') && UWP_TR_Helper::checkDependencies($requires, $addon_name)) {
         include UWP_TR_PLUGIN_PATH . 'src/UWP_TR_Main.php';
         UWP_TR_Main::init();
     }
@@ -41,8 +41,8 @@ add_action('plugins_loaded', function () {
 
 // run updater
 add_action('admin_init', function () {
-    include UWP_TR_PLUGIN_PATH . 'src/UWP_AO_Updater.php';
-    if (class_exists('UWP_AO_Updater')) {
-        new UWP_AO_Updater(__FILE__, 'upsellwp-translation');
+    include UWP_TR_PLUGIN_PATH . 'src/UWP_TR_Updater.php';
+    if (class_exists('UWP_TR_Updater')) {
+        new UWP_TR_Updater(__FILE__, 'upsellwp-translation');
     }
 });
