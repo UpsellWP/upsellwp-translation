@@ -40,7 +40,9 @@ add_action('plugins_loaded', function () {
 });
 
 // run updater
-include UWP_TR_PLUGIN_PATH . 'src/UWP_AO_Updater.php';
-if (class_exists('UWP_AO_Updater')) {
-    new UWP_AO_Updater(__FILE__, 'upsellwp-translation');
-}
+add_action('admin_init', function () {
+    include UWP_TR_PLUGIN_PATH . 'src/UWP_AO_Updater.php';
+    if (class_exists('UWP_AO_Updater')) {
+        new UWP_AO_Updater(__FILE__, 'upsellwp-translation');
+    }
+});
