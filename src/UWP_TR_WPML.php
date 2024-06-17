@@ -54,29 +54,4 @@ class UWP_TR_WPML
     {
         echo '<button type="button" id="uwp-tr-wpml" class="btn btn-primary">' . esc_html__('Sync', 'upsellwp-translation') . '</button>';
     }
-
-    /**
-     * To load assets.
-     *
-     * @return void
-     */
-    public static function loadAssets()
-    {
-        if (!class_exists('\CUW\App\Helpers\Config')) {
-            return;
-        }
-
-        $upsellwp_plugin = \CUW\App\Helpers\Config::get('plugin');
-        if (!empty($_GET['page']) && !empty($upsellwp_plugin['slug']) && $_GET['page'] == $upsellwp_plugin['slug']) {
-            wp_enqueue_script('uwp_tr_admin_script', plugin_dir_url(UWP_TR_PLUGIN_FILE) . 'assets/admin.js', ['jquery'], UWP_TR_PLUGIN_VERSION, ['in_footer' => true]);
-            wp_localize_script('uwp_tr_admin_script', 'uwp_tr_admin_script_data', [
-                'ajax_url' => admin_url('admin-ajax.php'),
-                'nonce' => wp_create_nonce('uwp_tr_nonce'),
-                'i18n' => [
-                  'synced' => __('Synced', 'upsellwp-translation'),
-                  'syncing' => __('Syncing...', 'upsellwp-translation'),
-                ],
-            ]);
-        }
-    }
 }
