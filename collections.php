@@ -4,6 +4,11 @@ return [
         'title',
         'cta_text',
         'description',
+        'accept_text',
+        'decline_text',
+        'timer' => [
+            'message',
+        ],
     ],
 
     'campaign_data_keys' => [
