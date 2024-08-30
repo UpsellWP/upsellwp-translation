@@ -26,5 +26,6 @@ return [
     'setting_keys' => [
         'offer_added_notice_message',
         'addon_badge_text',
+        'ppu_page_title',
     ],
 ];
