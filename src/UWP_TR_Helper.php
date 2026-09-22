@@ -35,7 +35,7 @@ class UWP_TR_Helper
             } else {
                 $upsellwp_name = 'UpsellWP';
                 $upsellwp_url = 'https://wordpress.org/plugins/checkout-upsell-and-order-bumps';
-                $upsellwp_version = !empty($requires['upsellwp']) ? $requires['upsellwp'] : '2.1';
+                $upsellwp_version = !empty($requires['upsellwp']) ? $requires['upsellwp'] : '2.2.11';
             }
             $upsellwp = '<a href="' . esc_url($upsellwp_url) . '" target="_blank">' . esc_html($upsellwp_name) . '</a>';
             if (defined('CUW_VERSION') && version_compare(CUW_VERSION, $upsellwp_version, '>=')) {
