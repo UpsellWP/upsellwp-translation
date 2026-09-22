@@ -25,7 +25,7 @@ class UWP_TR_Loco
      */
     public static function addStrings($extraction, $domain)
     {
-        if (!class_exists('Loco_gettext_String') || $domain != 'checkout-upsell-woocommerce') {
+        if (!class_exists('Loco_gettext_String') || $domain != 'checkout-upsell-and-order-bumps') {
             return;
         }
 

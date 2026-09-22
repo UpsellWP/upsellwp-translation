@@ -3,9 +3,11 @@
  * Plugin Name:          UpsellWP: Dynamic String Translation
  * Plugin URI:           https://upsellwp.com/add-ons/translation
  * Description:          Dynamic string translation addon. Helpful to sync dynamic strings. Supported plugins: WPML and Loco Translate.
- * Version:              1.0.1
- * Requires at least:    5.3
+ * Version:              1.0.2
+ * Requires at least:    6.0
  * Requires PHP:         7.0
+ * WC requires at least: 6.5
+ * WC tested up to:      11.1
  * Author:               UpsellWP
  * Author URI:           https://upsellwp.com
  * Text Domain:          upsellwp-translation
@@ -19,15 +21,15 @@ defined('ABSPATH') || die;
 // define basic plugin constants
 defined('UWP_TR_PLUGIN_FILE') || define('UWP_TR_PLUGIN_FILE', __FILE__);
 defined('UWP_TR_PLUGIN_PATH') || define('UWP_TR_PLUGIN_PATH', plugin_dir_path(__FILE__));
-defined('UWP_TR_PLUGIN_VERSION') || define('UWP_TR_PLUGIN_VERSION', '1.0.1');
+defined('UWP_TR_PLUGIN_VERSION') || define('UWP_TR_PLUGIN_VERSION', '1.0.2');
 
 // load plugin
 add_action('plugins_loaded', function () {
     $requires = [
         'php' => '7.0',
-        'wordpress' => '5.3',
-        'woocommerce' => '4.4',
-        'upsellwp' => '2.1',
+        'wordpress' => '6.0',
+        'woocommerce' => '6.5',
+        'upsellwp' => '2.2.11',
     ];
     $addon_name = 'UpsellWP: Dynamic String Translation';
     include UWP_TR_PLUGIN_PATH . 'src/UWP_TR_Helper.php';

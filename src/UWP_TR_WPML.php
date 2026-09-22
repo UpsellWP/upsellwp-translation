@@ -37,7 +37,7 @@ class UWP_TR_WPML
         $strings = UWP_TR_Strings::getStrings();
         if (!empty($strings)) {
             foreach ($strings as $string) {
-                do_action('wpml_register_single_string', 'checkout-upsell-woocommerce', md5($string), $string);
+                do_action('wpml_register_single_string', 'checkout-upsell-and-order-bumps', md5($string), $string);
             }
         }
 
